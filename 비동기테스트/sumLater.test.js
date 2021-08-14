@@ -5,3 +5,7 @@ test("1+3의 2초후 합한 계산값은 4", () => {
     expect(sum).toBe(4);
   });
 });
+
+test("1+3의 2초후 합한 계산값은 4", () => {
+  return expect(sumLater(1, 3)).resolves.toBe(4);
+});
